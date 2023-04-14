@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1600px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto;
+    gap: 25px;
+}
+
+.container .img-container {
+    height: 100%;
+    width: 120px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.container #first-container {
+    background-image: url('img/kokushibo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    transition: flex-grow 1s;
+}
+
+.container #second-container {
+    background-image: url('img/doma.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    transition: flex-grow 1s;
+}
+
+.container #third-container {
+    background-image: url('img/inosuke.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    transition: flex-grow 1s;
+}
+
+.container #fourth-container {
+    background-image: url('img/muichiro.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    transition: flex-grow 1s;
+}
+
+.container #five-container {
+    background-image: url('img/rengoku.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    transition: flex-grow 1s;
+}
+
