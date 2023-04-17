@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #333;
+    color: #222;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container.show {
+    transform: rotate(-15deg);
+}
+
+.toggle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.sphere {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform .6s linear;
+}
+
+.container.show .sphere {
+    transform: rotate(-85deg);
+}
+
+.sphere button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background-color: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+
+.sphere button:focus {
+    outline: none;
+}
+
+.sphere button#open {
+    left: 60%;
+}
+
+.sphere button#close {
+    top: 60%;
+    transform: rotate(100deg);
+    transform-origin: top left;
+}
+
+.container.show + .toggle-nav li {
+    transform: translateX(0);
+    transition-delay: .5s;
+}
+
+.toggle-nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+.toggle-nav ul {
+    padding-left: 25px;
+}
+
+.toggle-nav ul li {
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform .4s ease-in;
+}
+
+.toggle-nav ul li i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.toggle-nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+.toggle-nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+.toggle-nav a {
+    color: #fafafa;
+    transition: all 1.2s;
+}
+
+.toggle-nav a:hover {
+    color: #ff7979;
+    font-weight: bold;
+}
+
+.principal-content img {
+    width: 1000px;
+    height: 1600px;
+}
+
+.principal-content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.principal-content h1 {
+    margin: 0;
+}
+
+.principal-content h3 {
+    margin-bottom: 20px;
+}
+
+.principal-content small {
+    color: #555;
+    font-style: italic;
+}
+
+.principal-content p {
+    color: #333;
+    line-height: 1.5;
+    margin: 25px 0;
+}
