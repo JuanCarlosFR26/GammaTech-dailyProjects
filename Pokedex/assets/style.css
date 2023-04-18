@@ -36,7 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 18px;
 }
 
 
@@ -50,6 +50,7 @@ body {
     border: 2px solid #000;
     border-radius: 18px;
     position: relative;
+    box-shadow: 4px 4px 4px 4px #787000;
 }
 
 .card img {
