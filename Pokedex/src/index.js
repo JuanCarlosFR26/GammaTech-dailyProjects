@@ -23,8 +23,12 @@ const getPokemons = async () => {
       const poke = await fetchPokemon();
       const pokeList = poke;
 
+      console.log(poke);
+
       const imgPoke = document.createElement("img");
       imgPoke.src = pokeList.sprites.front_default;
+      const imgPokeShiny = document.createElement('img');
+      imgPokeShiny.src = pokeList.sprites.front_shiny;
       const idPoke = document.createElement("span");
       if(pokeList.id < 10) {
         idPoke.innerText = "00" + pokeList.id
@@ -38,12 +42,15 @@ const getPokemons = async () => {
 
       const pokeObj = {
         img: imgPoke.src,
+        imgShiny: imgPokeShiny,
         id: idPoke.innerText,
         h4: namePoke,
         type: types,
       };
 
       pokeArr.push(pokeObj);
+
+      pokeArr.sort((a, b) => a.id - b.id)
 
       localStorage.setItem("pokemon", JSON.stringify(pokeArr));
     };
@@ -57,6 +64,7 @@ getPokemons();
 
 function pintarPoke() {
   const pokeStorage = JSON.parse(localStorage.getItem("pokemon"));
+
 
   pokeStorage.forEach(pokemon => {
     const card = document.createElement("div");
@@ -73,6 +81,11 @@ function pintarPoke() {
     namePoke.style.marginTop = '15px'
     const typePoke = pokemon.type;
 
+    img.addEventListener('click', () => {
+      cardPadding.classList.add('rotate');
+        img.src = pokemon.imgShiny;
+    })
+
 
 
     cardPadding.appendChild(img)
@@ -82,8 +95,6 @@ function pintarPoke() {
         let typeId = document.createElement('small');
         typeId.innerText = 'Type: ' + type.type.name
         card.append(typeId)
-
-        console.log(card);
 
 
         if(type.type.name === 'grass') {
@@ -256,6 +267,7 @@ function pintarPoke() {
     })
 
   container.appendChild(card);
+
   })
 
 }
