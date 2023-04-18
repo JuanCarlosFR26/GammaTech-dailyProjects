@@ -79,14 +79,180 @@ function pintarPoke() {
 
   card.append(cardPadding, id, namePoke)
   const types = typePoke.forEach(type => {
-        let typeId = document.createElement('li');
-        const ul = document.createElement('ul');
-        console.log(type.type);
-        typeId.innerText = type.type.name
-        ul.appendChild(typeId)
-        card.append(ul)
+        let typeId = document.createElement('small');
+        typeId.innerText = 'Type: ' + type.type.name
+        card.append(typeId)
 
-        
+        console.log(card);
+
+
+        if(type.type.name === 'grass') {
+          card.classList.add('grass')
+        }
+
+        if(type.type.name === 'fire') {
+          card.classList.add('fire');
+        }
+
+        if(type.type.name === 'water') {
+          card.classList.add('water')
+        }
+
+        if(type.type.name === 'bug') {
+          card.classList.add('bug')
+        }
+
+        if(type.type.name === 'normal') {
+          card.classList.add('normal')
+        }
+
+        if(type.type.name === 'flying') {
+          card.classList.add('fly')
+        }
+
+        if(type.type.name === 'poison') {
+          card.classList.add('poison')
+        }
+
+        if(type.type.name === 'electric') {
+          card.classList.add('electric')
+        }
+
+        if(type.type.name === 'ground') {
+          card.classList.add('ground')
+        }
+
+        if(type.type.name === 'fairy') {
+          card.classList.add('fairy')
+        }
+
+        if(type.type.name === 'psychic') {
+          card.classList.add('psychic')
+        }
+
+        if(type.type.name === 'fighting') {
+          card.classList.add('fight');
+        }
+
+        if(type.type.name === 'dragon') {
+          card.classList.add('dragon')
+        }
+
+        if(type.type.name === 'ice') {
+          card.classList.add('ice')
+        }
+
+        if(type.type.name === 'rock') {
+          card.classList.add('rock')
+        }
+
+        if(type.type.name === 'ghost') {
+          card.classList.add('phantom')
+        }
+
+        if(type.type.name === 'steel') {
+          card.classList.add('steel');
+        }
+
+        if(card.classList.contains('fire') && card.classList.contains('fly')) {
+          card.setAttribute("id", "fire-fly");
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('poison')) {
+          card.setAttribute('id', 'grass-poison');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('psychic')) {
+          card.setAttribute('id', 'grass-psychic');
+        }
+
+        if(card.classList.contains('fly') && card.classList.contains('normal')) {
+          card.setAttribute('id', 'normal-fly');
+        }
+
+        if(card.classList.contains('bug') && card.classList.contains('poison')) {
+          card.setAttribute('id', 'bug-poison');
+        }
+
+        if(card.classList.contains('bug') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'bug-fly');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('psychic')) {
+          card.setAttribute('id', 'water-psychic');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('poison')) {
+          card.setAttribute('id', 'water-poison');
+        }
+
+        if(card.classList.contains('poison') && card.classList.contains('ground')) {
+          card.setAttribute('id', 'poison-ground');
+        }
+
+        if(card.classList.contains('electric') && card.classList.contains('steel')) {
+          card.setAttribute('id', 'electric-steel');
+        }
+
+        if(card.classList.contains('electric') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'electric-fly');
+        }
+
+        if(card.classList.contains('bug') && card.classList.contains('grass')) {
+          card.setAttribute('id', 'bug-grass');
+        }
+
+        if(card.classList.contains('poison') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'poison-fly');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('fight')) {
+          card.setAttribute('id', 'water-fight');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('ice')) {
+          card.setAttribute('id', 'water-ice');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'water-fly');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('ground')) {
+          card.setAttribute('id', 'rock-ground');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('water')) {
+          card.setAttribute('id', 'rock-water');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'rock-fly');
+        }
+
+        if(card.classList.contains('normal') && card.classList.contains('fairy')) {
+          card.setAttribute('id', 'normal-fairy');
+        }
+
+        if(card.classList.contains('phantom') && card.classList.contains('poison')) {
+          card.setAttribute('id', 'phantom-poison');
+        }
+
+        if(card.classList.contains('psychic') && card.classList.contains('fairy')) {
+          card.setAttribute('id', 'psychic-fairy');
+        }
+
+        if(card.classList.contains('ice') && card.classList.contains('psychic')) {
+          card.setAttribute('id', 'ice-psychic');
+        }
+
+        if(card.classList.contains('ice') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'ice-fly');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('fly')) {
+          card.setAttribute('id', 'dragon-fly');
+        }
     })
 
   container.appendChild(card);
