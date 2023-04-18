@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 190px;
     height: 320px;
     border: 2px solid #000;
     border-radius: 18px;
@@ -53,7 +53,8 @@ body {
 }
 
 .card img {
-    width: 110px;
+    width: 140px;
+    height: 140px;
 }
 
 .card span {
@@ -78,7 +79,7 @@ body {
 }
 
 .card .cardPadding {
-    padding: 20px;
+    padding: 10px;
     background-color: #F2FEF3;
     border-radius: 50%;
 }

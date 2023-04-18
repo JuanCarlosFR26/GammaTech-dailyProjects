@@ -89,8 +89,6 @@ function pintarPoke() {
       img.src = pokemon.img
     })
 
-
-
     cardPadding.append(img)
 
   card.append(cardPadding, id, namePoke)
