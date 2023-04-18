@@ -281,3 +281,9 @@ body {
     background: rgb(66,110,205);
     background: linear-gradient(90deg, rgba(66,110,205,1) 38%, rgba(196,245,244,1) 80%);
 }
+
+
+.rotateImg {
+    transition-duration: 1s;
+    transform: rotateY(360deg);
+}

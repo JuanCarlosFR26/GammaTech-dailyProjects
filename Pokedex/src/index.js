@@ -81,11 +81,13 @@ function pintarPoke() {
 
     if(img.src === pokemon.img) {
       img.addEventListener('click', () => {
-          img.src = pokemon.imgShiny;
+        cardPadding.classList.add('rotateImg');
+        img.src = pokemon.imgShiny;
       })
-    } 
+    }
 
     img.addEventListener('dblclick', () => {
+      cardPadding.classList.remove('rotateImg')
       img.src = pokemon.img
     })
 
