@@ -1,17 +1,15 @@
-const img = document.querySelectorAll('.img-container');
+const imgs = document.querySelectorAll('.img-container');
+const titles = document.querySelectorAll('h1');
 
-img.forEach(image => {
-    image.addEventListener('click', () => {
-        if(image.style.flexGrow !== '1') {
-            console.log(image);
-            const parent = image.parentElement;
-            const children = parent.children
-            for(let i = 0; i < children.length; i++) {
-                if(children[i].style.flexGrow === '1') {
-                    children[i].style.flexGrow = '0'
-                }
-            }
-            image.style.flexGrow = '1'
-        }
+imgs.forEach(img => {
+    img.addEventListener('click', () => {
+        removeClase();
+        img.classList.add('open');
     })
 })
+
+function removeClase() {
+    imgs.forEach(img => {
+        img.classList.remove('open');
+    })
+}

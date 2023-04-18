@@ -19,6 +19,16 @@
     width: 120px;
     border-radius: 40px;
     cursor: pointer;
+    position: relative;
+    transition: all .5 ease-in;
+}
+
+.container .img-container h1 {
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 50px;
+    opacity: 0;
 }
 
 .container #first-container {
@@ -26,8 +36,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow: 1;
-    transition: flex-grow 1s;
+    transition: width 2s;
 }
 
 .container #second-container {
@@ -35,8 +44,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow: 0;
-    transition: flex-grow 1s;
+    transition: width 1s;
 }
 
 .container #third-container {
@@ -44,8 +52,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow: 0;
-    transition: flex-grow 1s;
+    transition: width 2s;
+
 }
 
 .container #fourth-container {
@@ -53,8 +61,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow: 0;
-    transition: flex-grow 1s;
+    transition: width 2s;
 }
 
 .container #five-container {
@@ -62,7 +69,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-grow: 0;
-    transition: flex-grow 1s;
+    transition: width 2s;
 }
 
+.container .open {
+    width: 1400px;
+}
+
+.container .open h1 {
+    opacity: 1;
+}
