@@ -49,6 +49,11 @@ body {
     height: 320px;
     border: 2px solid #000;
     border-radius: 18px;
+    position: relative;
+}
+
+.card img {
+    width: 110px;
 }
 
 .card span {
@@ -76,13 +81,7 @@ body {
     padding: 20px;
     background-color: #F2FEF3;
     border-radius: 50%;
-    transition: rotate .4s ease-in;
 }
-
-.card .cardPadding .rotate {
-    transform: rotate(180deg);
-}
-
 
 .grass {
     background-color: rgb(57, 240, 65);
