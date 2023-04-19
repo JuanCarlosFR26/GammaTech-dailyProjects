@@ -3,14 +3,14 @@ const titleHome = document.getElementById('titleHome');
 
 const body = document.querySelector('body');
 
-body.style.backgroundImage = "url('../assets/img/backSegGen.png')"
+body.style.backgroundImage = "url('../assets/img/backQuintaGen.png')"
 
 titleHome.addEventListener('click', () => {
   window.location.href = '../pages/home.html'
 })
 
 const fetchData = async () => {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=100&offset=151");
+  const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=154&offset=494");
   const data = await response.json();
   return data;
 };
@@ -59,7 +59,7 @@ const getPokemons = async () => {
 
       pokeArr.sort((a, b) => a.id - b.id)
 
-      localStorage.setItem("pokemon2", JSON.stringify(pokeArr));
+      localStorage.setItem("pokemon5", JSON.stringify(pokeArr));
     };
 
     everyPokemon();
@@ -70,7 +70,7 @@ const getPokemons = async () => {
 getPokemons();
 
 function pintarPoke() {
-  const pokeStorage = JSON.parse(localStorage.getItem("pokemon2"));
+  const pokeStorage = JSON.parse(localStorage.getItem("pokemon5"));
 
 
   pokeStorage.forEach(pokemon => {
@@ -359,6 +359,162 @@ function pintarPoke() {
 
         if(card.classList.contains('rock') && card.classList.contains('sinister')) {
             card.setAttribute('id', 'rock-sinister');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('ground')) {
+            card.setAttribute('id', 'grass-ground');
+        }
+
+        if(card.classList.contains('fire') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'fire-fight');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'water-steel');
+        }
+
+        if(card.classList.contains('normal') && card.classList.contains('water')) {
+            card.setAttribute('id', 'normal-water');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'rock-steel');
+        }
+
+        if(card.classList.contains('phantom') && card.classList.contains('fly')) {
+            card.setAttribute('id', 'phantom-fly');
+        }
+
+        if(card.classList.contains('poison') && card.classList.contains('sinister')) {
+            card.setAttribute('id', 'poison-sinister');
+        }
+
+        if(card.classList.contains('poison') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'poison-fight');
+        }
+
+        if(card.classList.contains('steel') && card.classList.contains('psychic')) {
+            card.setAttribute('id', 'steel-psychic');
+        }
+
+        if(card.classList.contains('phantom') && card.classList.contains('sinister')) {
+            card.setAttribute('id', 'phantom-sinister');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('ground')) {
+            card.setAttribute('id', 'dragon-ground');
+        }
+
+        if(card.classList.contains('fight') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'fight-steel');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('ice')) {
+            card.setAttribute('id', 'grass-ice');
+        }
+
+        if(card.classList.contains('psychic') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'psychic-fight');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'rock-steel');
+        }
+
+        if(card.classList.contains('ice') && card.classList.contains('phantom')) {
+            card.setAttribute('id', 'ice-phantom');
+        }
+
+        if(card.classList.contains('electric') && card.classList.contains('phantom')) {
+            card.setAttribute('id', 'electric-phantom');
+        }
+
+        if(card.classList.contains('steel') && card.classList.contains('dragon')) {
+            card.setAttribute('id', 'steel-dragon');
+        }
+
+        if(card.classList.contains('phantom') && card.classList.contains('dragon')) {
+            card.setAttribute('id', 'phantom-dragon');
+        }
+
+        if(card.classList.contains('fire') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'fire-steel');
+        }
+
+        if(card.classList.contains('psychic') && card.classList.contains('fire')) {
+            card.setAttribute('id', 'psychic-fire');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('fairy')) {
+            card.setAttribute('id', 'grass-fairy');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'grass-steel');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'grass-fight');
+        }
+
+        if(card.classList.contains('ground') && card.classList.contains('sinister')) {
+            card.setAttribute('id', 'ground-sinister');
+        }
+
+        if(card.classList.contains('ground') && card.classList.contains('phantom')) {
+            card.setAttribute('id', 'ground-phantom');
+        }
+
+        if(card.classList.contains('ground') && card.classList.contains('electric')) {
+            card.setAttribute('id', 'ground-electric');
+        }
+
+        if(card.classList.contains('sinister') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'sinister-fight');
+        }
+
+        if(card.classList.contains('sinister') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'sinister-steel');
+        }
+
+        if(card.classList.contains('sinister') && card.classList.contains('dragon')) {
+            card.setAttribute('id', 'sinister-dragon');
+        }
+
+        if(card.classList.contains('normal') && card.classList.contains('grass')) {
+            card.setAttribute('id', 'normal-grass');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('phantom')) {
+            card.setAttribute('id', 'water-phantom');
+        }
+
+        if(card.classList.contains('bug') && card.classList.contains('electric')) {
+            card.setAttribute('id', 'bug-electric');
+        }
+
+        if(card.classList.contains('bug') && card.classList.contains('fire')) {
+            card.setAttribute('id', 'bug-fire');
+        }
+
+        if(card.classList.contains('phantom') && card.classList.contains('fire')) {
+            card.setAttribute('id', 'phantom-fire');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'rock-fight');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('fire')) {
+            card.setAttribute('id', 'dragon-fire');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('electric')) {
+            card.setAttribute('id', 'dragon-electric');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('ice')) {
+            card.setAttribute('id', 'dragon-ice');
         }
 
     })

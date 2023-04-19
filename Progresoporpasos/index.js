@@ -1,11 +1,3 @@
-// const containers = document.querySelector('.container');
-// const rounds = document.querySelectorAll('.round');
-// const dividers = document.querySelectorAll('.divider');
-// const prevButton = document.querySelector('#prev');
-// const nextButton = document.querySelector('#next');
-
-
-
 const colorChange = document.querySelector('#color-change')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')

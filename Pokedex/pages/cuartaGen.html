@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex - Home</title>
-    <link rel="stylesheet" href="../assets/home.css">
+    <title>Pokedex - Cuarta Generación</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../assets/style.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,23 +16,14 @@
 </head>
 <body>
 
-
     <div class="container">
-        <h1>Pokédex</h1>
-        <div class="buttons-container">
-            <button id="firstGen">Primera Generación</button>
-            <button id="secondGen">Segunda Generación</button>
-            <button id="terceraGen">Tercera Generación</button>
-            <button id="cuartaGen">Cuarta Generación</button>
-            <button id="fiveGen">Quinta Generación</button>
-            <button>Sexta Generación</button>
-            <button>Séptima Generación</button>
-            <button>Octava Generación</button>
-            <button>Novena Generación</button>
+        <div class="title-container">
+            <h1 id="titleHome">Pokédex</h1>
         </div>
+        <div class="cards-container" id="cards-container"></div>
     </div>
 
+    <script src="../src/cuartaGen.js"></script>
 
-    <script src="../src/home.js"></script>
 </body>
 </html>
