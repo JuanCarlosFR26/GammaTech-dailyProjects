@@ -8,8 +8,10 @@
 }
 
 body {
-    background: rgb(204,201,183);
-    background: linear-gradient(90deg, rgba(204,201,183,1) 0%, rgba(166,170,118,1) 14%, rgba(237,223,188,1) 91%);
+    background-image: url('img/backFirstGen.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 
@@ -18,15 +20,48 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 60vw;
     height: 100vh;
     margin: 40px auto;
 }
 
-.container h1 {
-    font-size: 40px;
-    margin: 50px;
+.container .title-container {
+    background-color: rgba(240, 240, 240, .6);
+    border-radius: 40px;
+    width: 400px;
+    height: 280px;
+    text-align: center;
+    padding: 40px;
+    margin-top: 190px;
+    margin-bottom: 50px;
+    display: block;
 }
+
+.container .title-container h1 {
+    font-size: 70px;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
+.container .title-container h1:hover {
+    animation-play-state: paused;
+}
+
+
 
 .container #cards-container {
     width: 1200px;
@@ -50,12 +85,13 @@ body {
     border: 2px solid #000;
     border-radius: 18px;
     position: relative;
-    box-shadow: 4px 4px 4px 4px #787000;
+    box-shadow: 4px 4px 4px 4px #000000;
 }
 
 .card img {
     width: 140px;
     height: 140px;
+    cursor: pointer;
 }
 
 .card span {
@@ -118,7 +154,7 @@ body {
 }
 
 .dragon {
-    background-color: rgb(66, 110, 205);
+    background-color: rgb(0, 55, 173);
 }
 
 .fairy {
@@ -127,6 +163,11 @@ body {
 
 .sinister {
     background-color: rgb(37, 24, 40);
+    color: #fff;
+}
+
+.sinister span {
+    color: #000;
 }
 
 .phantom {
@@ -145,7 +186,7 @@ body {
     background-color: rgb(128, 97, 0);
 }
 
-.steal {
+.steel {
     background-color: rgb(158, 158, 158);
 }
 
@@ -280,6 +321,106 @@ body {
 #dragon-fly {
     background: rgb(66,110,205);
     background: linear-gradient(90deg, rgba(66,110,205,1) 38%, rgba(196,245,244,1) 80%);
+}
+
+#water-electric {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(255,255,0,1) 84%);
+}
+
+#fairy-fly {
+    background: rgb(238,216,243);
+    background: linear-gradient(90deg, rgba(238,216,243,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#psychic-fly {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#grass-fly {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#sinister-fly {
+    background: rgb(37,24,50);
+    background: linear-gradient(90deg, rgba(37,24,50,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#ground-fly {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#steel-fly {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 18%, rgba(196,245,244,1) 84%);
+}
+
+#water-fairy {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(238,216,243,1) 71%);
+}
+
+#water-ground {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(203,163,27,1) 71%);
+}
+
+#water-dragon {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 18%, rgba(0,55,173,1) 71%);
+}
+
+#normal-psychic {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(218,0,122,1) 71%);
+}
+
+#bug-steel {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(158,158,158,1) 71%);
+}
+
+#steel-ground {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(203,163,27,1) 71%);
+}
+
+#bug-rock {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(128,97,0,1) 71%);
+}
+
+#bug-fight {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(255,193,0,1) 71%);
+}
+
+#sinister-ice {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(155,220,248,1) 71%);
+}
+
+#sinister-fire {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(234,82,0,1) 71%);
+}
+
+#fire-rock {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(128,97,0,1) 71%);
+}
+
+#ice-ground {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(203,163,27,1) 71%);
+}
+
+#rock-sinister {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(37,24,40,1) 71%);
 }
 
 
