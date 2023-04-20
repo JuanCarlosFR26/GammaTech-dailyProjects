@@ -3,14 +3,14 @@ const titleHome = document.getElementById('titleHome');
 
 const body = document.querySelector('body');
 
-body.style.backgroundImage = "url('../assets/img/backSextaGen.png')"
+body.style.backgroundImage = "url('../assets/img/backSeptGen.png')"
 
 titleHome.addEventListener('click', () => {
   window.location.href = '../pages/home.html'
 })
 
 const fetchData = async () => {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=72&offset=649");
+  const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=88&offset=721");
   const data = await response.json();
   return data;
 };
@@ -59,7 +59,7 @@ const getPokemons = async () => {
 
       pokeArr.sort((a, b) => a.id - b.id)
 
-      localStorage.setItem("pokemon6", JSON.stringify(pokeArr));
+      localStorage.setItem("pokemon7", JSON.stringify(pokeArr));
     };
 
     everyPokemon();
@@ -70,7 +70,7 @@ const getPokemons = async () => {
 getPokemons();
 
 function pintarPoke() {
-  const pokeStorage = JSON.parse(localStorage.getItem("pokemon6"));
+  const pokeStorage = JSON.parse(localStorage.getItem("pokemon7"));
 
 
   pokeStorage.forEach(pokemon => {
@@ -587,6 +587,50 @@ function pintarPoke() {
 
         if(card.classList.contains('psychic') && card.classList.contains('phantom')) {
             card.setAttribute('id', 'psychic-phantom');
+        }
+
+        if(card.classList.contains('fight') && card.classList.contains('ice')) {
+            card.setAttribute('id', 'fight-ice');
+        }
+
+        if(card.classList.contains('bug') && card.classList.contains('fairy')) {
+            card.setAttribute('id', 'bug-fairy');
+        }
+
+        if(card.classList.contains('water') && card.classList.contains('bug')) {
+            card.setAttribute('id', 'water-bug');
+        }
+
+        if(card.classList.contains('poison') && card.classList.contains('fire')) {
+            card.setAttribute('id', 'poison-fire');
+        }
+
+        if(card.classList.contains('normal') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'normal-fight');
+        }
+
+        if(card.classList.contains('phantom') && card.classList.contains('fairy')) {
+            card.setAttribute('id', 'phantom-fairy');
+        }
+
+        if(card.classList.contains('normal') && card.classList.contains('dragon')) {
+            card.setAttribute('id', 'normal-dragon');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'dragon-fight');
+        }
+
+        if(card.classList.contains('psychic') && card.classList.contains('steel')) {
+            card.setAttribute('id', 'psychic-steel');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('poison')) {
+            card.setAttribute('id', 'rock-poison');
+        }
+
+        if(card.classList.contains('fight') && card.classList.contains('phantom')) {
+            card.setAttribute('id', 'fight-phantom');
         }
 
     })

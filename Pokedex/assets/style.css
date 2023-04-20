@@ -483,6 +483,11 @@ body {
     background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(218,0,122,1) 80%);
 }
 
+#psychic-steel {
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(158,158,158,1) 75%);
+}
+
 #phantom-sinister {
     background: rgb(76,0,100);
     background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(37,24,40,1) 80%);
@@ -510,7 +515,7 @@ body {
 
 #electric-phantom {
     background: rgb(255,255,0);
-    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(76,0,100,1) 80%);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 16%, rgba(76,0,100,1) 80%);
 }
 
 #steel-dragon {
@@ -568,9 +573,9 @@ body {
     background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(76,0,100,1) 75%);
 }
 
-#sinister-fight {
-    background: rgb(37,24,40);
-    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(255,193,0,1) 75%);
+#fight-sinister {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(37,24,40,1) 75%);
 }
 
 #sinister-steel {
@@ -706,6 +711,110 @@ body {
 #psychic-phantom {
     background: rgb(218,0,122);
     background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fight-ice {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(155,220,248,1) 75%);
+}
+
+#bug-fairy {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#water-bug {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(117,181,119,1) 75%);
+}
+
+#poison-fire {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#normal-fight {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#phantom-fairy {
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#normal-dragon {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#dragon-fight {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#rock-poison {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(159,21,168,1) 75%);
+}
+
+#fight-phantom {
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fly-steel {
+    background: rgb(196,245,244);
+    background: linear-gradient(90deg, rgba(196,245,244,1) 38%, rgba(158,158,158,1) 75%);
+}
+
+#bug-psychic {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#grass-dragon {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#electric-poison {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(159,21,168,1) 75%);
+}
+
+#sinister-fairy {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(238,216,243,1) 75%);
+}
+
+#sinister-normal {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(201,201,201,1) 75%);
+}
+
+#sinister-grass {
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#ice-bug {
+    background: rgb(155,220,248);
+    background: linear-gradient(90deg, rgba(155,220,248,1) 38%, rgba(117,181,119,1) 75%);
+}
+
+#electric-sinister {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(37,24,40,1) 75%);
+}
+
+#electric-ice {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(155, 220, 248) 75%);
+}
+
+#electric-sinister {
+    color: #000;
 }
 
 .rotateImg {
