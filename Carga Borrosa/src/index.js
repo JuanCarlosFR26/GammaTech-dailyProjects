@@ -1,17 +1,13 @@
 let charge = document.querySelector('.countNumber');
 
-function counter() {
-    for(let i = 0; i <= 100; i++) {
-        console.log(i);
-        charge.innerText = i;
+let count = 0;
+let interval = setInterval(function() {
+    count += 1;
+    if(count > 100) {
+        count = 100;
+        // clearInterval(interval)
     }
-}
 
-setTimeout(() => {
-    counter();
-}, 1000)
-
-clearTimeout(counter());
-
-// setInterval(counter, 1000)
+    charge.innerText = count;
+}, 20)
 

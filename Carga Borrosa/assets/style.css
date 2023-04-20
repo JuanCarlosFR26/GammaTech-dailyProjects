@@ -14,7 +14,7 @@
     width: 100vw;
     height: 100vh;
     animation-name: charge;
-    animation-duration: 7s;
+    animation-duration: 3.2s;
     animation-fill-mode: forwards;
     filter: blur(10px);
 }
@@ -26,14 +26,16 @@
     font-size: 40px;
     color: #fff;
     animation-name: desappear;
-    animation-duration: 7s;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     opacity: 1;
 }
 
 .carga .count .countNumber {
     animation-name: desappear;
-    animation-duration: 7s;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     opacity: 1;
 }
