@@ -44,4 +44,22 @@ novenaGen.addEventListener('click', () => {
     window.location.href = '../pages/novenaGen.html'
 })
 
+const audio = document.querySelector('audio');
+const nonAudio = document.querySelector('#no-audio');
+const iconAudio = document.querySelector('.audio')
+audio.play();
 
+const controlAudio = document.querySelector('i');
+
+controlAudio.addEventListener('click', () => {
+    audio.pause();
+    iconAudio.style.display = 'none'
+    nonAudio.style.display = 'block'
+
+})
+
+nonAudio.addEventListener('click', () => {
+    audio.play();
+    iconAudio.style.display = 'block';
+    nonAudio.style.display = 'none';
+})

@@ -861,3 +861,29 @@ body {
     transition-duration: 1s;
     transform: rotateY(360deg);
 }
+
+.audio {
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#no-audio {
+    display: none;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+}
