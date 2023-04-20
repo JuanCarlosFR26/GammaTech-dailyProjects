@@ -40,4 +40,8 @@ octavaGen.addEventListener('click', () => {
     window.location.href = '../pages/octavaGen.html'
 })
 
+novenaGen.addEventListener('click', () => {
+    window.location.href = '../pages/novenaGen.html'
+})
+
 

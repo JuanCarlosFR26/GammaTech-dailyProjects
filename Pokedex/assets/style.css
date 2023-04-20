@@ -813,6 +813,46 @@ body {
     background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(155, 220, 248) 75%);
 }
 
+#bug-sinister {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(37,24,40,1) 75%);
+}
+
+#electric-fight {
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#poison-normal {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(201,201,201,1) 75%);
+}
+
+#grass-fire {
+    background: rgb(57,240,65);
+    background: linear-gradient(90deg, rgba(57,240,65,1) 38%, rgba(234,82,0,1) 75%);
+}
+
+#steel-poison {
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(159,21,168,1) 75%);
+}
+
+#ground-fight {
+    background: rgb(203,163,72);
+    background: linear-gradient(90deg, rgba(203,163,72,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#rock-electric {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(255,255,0,1) 75%);
+}
+
+#fairy-fight {
+    background: rgb(238,126,243);
+    background: linear-gradient(90deg, rgba(238,126,243,1) 38%, rgba(255,193,0,1) 75%);
+}
+
 #electric-sinister {
     color: #000;
 }
