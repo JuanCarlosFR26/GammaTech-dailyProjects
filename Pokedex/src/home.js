@@ -3,6 +3,7 @@ const secondGen = document.getElementById('secondGen');
 const thirdGen = document.getElementById('terceraGen');
 const fourthGen = document.getElementById('cuartaGen');
 const fiveGen = document.getElementById('fiveGen');
+const sixGen = document.getElementById('sextaGen');
 
 firstGen.addEventListener('click', () => {
     window.location.href = '../pages/primeraGen.html'
@@ -23,3 +24,8 @@ fourthGen.addEventListener('click', () => {
 fiveGen.addEventListener('click', () => {
     window.location.href = '../pages/quintaGen.html'
 })
+
+sixGen.addEventListener('click', () => {
+    window.location.href = '../pages/sextaGen.html'
+})
+

@@ -204,8 +204,8 @@ body {
 }
 
 #fire-fly {
-    background: rgb(196,245,244);
-    background: linear-gradient(90deg, rgba(196,245,244,1) 38%, rgba(234,82,0,1) 80%);
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(196,245,244,1) 71%);
 }
 
 #grass-poison {
@@ -236,6 +236,16 @@ body {
 #poison-ground {
     background: rgb(159,21,168);
     background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(203,163,27,1) 80%);
+}
+
+#poison-dragon {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(0,55,173,1) 71%);
+}
+
+#poison-water {
+    background: rgb(159,21,168);
+    background: linear-gradient(90deg, rgba(159,21,168,1) 38%, rgba(0,158,227,1) 71%);
 }
 
 #electric-steel {
@@ -616,6 +626,72 @@ body {
 #dragon-ice {
     background: rgb(0,55,173);
     background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(155,220,248,1) 75%);
+}
+
+#water-sinister {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(37,24,40,1) 71%);
+}
+
+#normal-ground {
+    background: rgb(201,201,201);
+    background: linear-gradient(90deg, rgba(201,201,201,1) 38%, rgba(203,163,27,1) 71%);
+}
+
+#fire-normal {
+
+}
+
+#fire-water {
+
+}
+
+#steel-phantom {
+
+}
+
+#steel-fairy {
+
+}
+
+#sinister-psychic {
+
+}
+
+#electric-normal {
+
+}
+
+#electric-fairy {
+
+}
+
+#rock-dragon {
+
+}
+
+#rock-ice {
+    
+}
+
+#rock-fairy {
+
+}
+
+#fight-fly {
+
+}
+
+#phantom-grass {
+
+}
+
+#fly-dragon {
+
+}
+
+#psychic-phantom {
+
 }
 
 .rotateImg {
