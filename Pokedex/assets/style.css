@@ -639,59 +639,73 @@ body {
 }
 
 #fire-normal {
-
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(201,201,201,1) 75%);
 }
 
 #fire-water {
-
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(0,158,227,1) 75%);
 }
 
 #steel-phantom {
-
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(76,0,100,1) 75%);
 }
 
 #steel-fairy {
-
+    background: rgb(158,158,158);
+    background: linear-gradient(90deg, rgba(158,158,158,1) 38%, rgba(238,216,243,1) 75%);
 }
 
 #sinister-psychic {
-
+    background: rgb(37,24,40);
+    background: linear-gradient(90deg, rgba(37,24,40,1) 38%, rgba(218,0,122,1) 75%);
 }
 
 #electric-normal {
-
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(201,201,201,1) 75%);
 }
 
 #electric-fairy {
-
+    background: rgb(255,255,0);
+    background: linear-gradient(90deg, rgba(255,255,0,1) 38%, rgba(238,216,243,1) 75%);
 }
 
 #rock-dragon {
-
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(0,55,173,1) 75%);
 }
 
 #rock-ice {
-    
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(155,220,248,1) 75%);
 }
 
 #rock-fairy {
-
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(238,216,243,1) 75%);
 }
 
 #fight-fly {
-
+    background: rgb(255,193,0);
+    background: linear-gradient(90deg, rgba(255,193,0,1) 38%, rgba(196,245,244,1) 75%);
 }
 
 #phantom-grass {
-
+    background: rgb(76,0,100);
+    background: linear-gradient(90deg, rgba(76,0,100,1) 38%, rgba(57,240,65,1) 75%);
 }
 
 #fly-dragon {
-
+    background: rgb(196,245,244);
+    background: linear-gradient(90deg, rgba(196,245,244,1) 38%, rgba(0,55,173,1) 75%);
 }
 
 #psychic-phantom {
-
+    background: rgb(218,0,122);
+    background: linear-gradient(90deg, rgba(218,0,122,1) 38%, rgba(76,0,100,1) 75%);
 }
 
 .rotateImg {
