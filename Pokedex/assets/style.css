@@ -940,11 +940,11 @@ body {
 .bannerInfo {
     display: none;
     position: fixed;
-    top: 0;
+    top: 200;
     left: 30%;
     margin: 0 auto;
     width: 700px;
-    height: 1000px;
+    height: 400px;
     /* transition: all 3s; */
     border: 8px solid #000;
 }

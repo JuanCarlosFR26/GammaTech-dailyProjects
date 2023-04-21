@@ -719,13 +719,17 @@ function pintarPoke() {
 
 pintarPoke()
 
+
+
+// Control audio
+
 const audio = document.querySelector('audio');
 const nonAudio = document.querySelector('#no-audio');
 const iconAudio = document.querySelector('.audio')
 audio.volume = 0.1;
 audio.play();
 
-const controlAudio = document.querySelector('i');
+const controlAudio = document.querySelector('#on-audio');
 
 controlAudio.addEventListener('click', () => {
     audio.pause();
@@ -739,3 +743,101 @@ nonAudio.addEventListener('click', () => {
     iconAudio.style.display = 'block';
     nonAudio.style.display = 'none';
 })
+
+// Creando los banners de información
+
+const idInfo = document.querySelectorAll('span')
+
+
+idInfo.forEach(span => {
+  span.addEventListener('click', () => {
+    showInfo(span);
+  })
+})
+
+
+function showInfo(element) {
+  const container = document.querySelector('.container');
+
+  // Guardando la tarjeta pokemon
+  const card = element.parentElement;
+
+
+  // Creando el banner de información
+  const bannerInfo = document.createElement('div');
+  bannerInfo.classList.add('bannerInfo');
+  bannerInfo.style.display = 'block';
+
+  // Añadiendo estilos al banner info
+  if(card.classList.length >= 3) {
+    const backColorCard =  card.getAttribute('id');
+    bannerInfo.setAttribute('id', backColorCard)
+  }
+
+  if(card.classList.length <= 2) {
+    bannerInfo.classList.add(card.classList[1]);
+  }
+
+  // Añadiendo el banner al DOM
+  container.appendChild(bannerInfo);
+
+  // Añadiendo X para cerrar banner
+  const iconClose = document.createElement('img');
+  iconClose.src = '../assets/img/x-solid.svg'
+  iconClose.style.display = 'block'
+  const divIcon = document.createElement('div');
+  divIcon.setAttribute('id', 'divIcon')
+
+  divIcon.appendChild(iconClose)
+  bannerInfo.appendChild(divIcon);
+
+  iconClose.addEventListener('click', () => {
+    bannerInfo.remove();
+  })
+
+  // Guardando la imagen de la tarjeta pokemon
+  const imgPoke = document.createElement('img');
+  const imgcontainer = document.createElement('div');
+  imgcontainer.setAttribute('id', 'imgContainer')
+  const imgCardSrc = card.firstElementChild.firstElementChild.src;
+
+  imgPoke.src = imgCardSrc;
+
+  // Trayendo la imagen al banner
+  imgcontainer.appendChild(imgPoke)
+  bannerInfo.appendChild(imgcontainer)
+
+  // Creando nombre, id y tipos
+  const infoContainer = document.createElement('div');
+  infoContainer.setAttribute('id', 'infoContainer');
+  const spanInfoId = card.children[1].innerText;
+  const h4InfoName = card.children[2].innerText;
+  const namePoke = document.createElement('h1');
+  namePoke.style.fontSize = '14px'
+  const id = document.createElement('span');
+  const typePoke = document.createElement('small');
+  const typePoke2 = document.createElement('small');
+  typePoke.classList.add('spanIdInfo');
+  typePoke2.classList.add('spanIdInfo')
+
+  if(card.children.length < 5) {
+    const type1 = card.children[3].innerText;
+    typePoke.innerText = type1;
+    infoContainer.append(id, namePoke, typePoke)
+  }
+
+  if(card.children.length === 5) {
+    const type1 = card.children[3].innerText;
+    const type2 = card.children[4].innerText;
+    typePoke.innerText = type1;
+    typePoke2.innerText = type2;
+    infoContainer.append(id, namePoke, typePoke, typePoke2)
+  }
+
+  id.innerText = 'ID: ' + spanInfoId;
+  namePoke.innerText = 'Nombre: ' + h4InfoName;
+
+
+  bannerInfo.appendChild(infoContainer);
+
+}

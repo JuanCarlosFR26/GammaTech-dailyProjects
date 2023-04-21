@@ -28,7 +28,6 @@ const getPokemons = async () => {
       const poke = await fetchPokemon();
       const pokeList = poke;
 
-      // console.log(pokeList);
 
       const imgPoke = document.createElement("img");
       imgPoke.src = pokeList.sprites.front_default;
@@ -50,7 +49,7 @@ const getPokemons = async () => {
         imgShiny: imgPokeShiny.src,
         id: idPoke.innerText,
         h4: namePoke,
-        type: types,
+        type: types
       };
 
       pokeArr.push(pokeObj);
@@ -282,8 +281,6 @@ function pintarPoke() {
 
   })
 
-  
-
 }
 
 pintarPoke()
@@ -329,7 +326,6 @@ function showInfo(element) {
   // Guardando la tarjeta pokemon
   const card = element.parentElement;
 
-  console.log(card.children);
 
   // Creando el banner de información
   const bannerInfo = document.createElement('div');
@@ -407,11 +403,5 @@ function showInfo(element) {
 
 
   bannerInfo.appendChild(infoContainer);
-
-  // Añadiendo la evolución
-  const pokeList = JSON.parse(localStorage.getItem('pokemon'));
-
-  console.log(pokeList);
-
 
 }
