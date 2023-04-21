@@ -99,6 +99,7 @@ body {
     padding: 4px;
     background-color: antiquewhite;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .card h4 {
@@ -886,4 +887,76 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 50px;
+}
+
+/*======================= BANNER INFO =======================*/
+
+.bannerInfo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    margin: 0 auto;
+    width: 700px;
+    height: 1000px;
+    /* transition: all 3s; */
+    border: 8px solid #000;
+}
+
+#divIcon {
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    padding: 12px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#imgContainer {
+    font-size: 20px;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#imgContainer img {
+    width: 80%;
+}
+
+#infoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    padding: 12px;
+    height: 120px;
+    background-color: #fff;
+    border: 4px dotted #000;
+    position: absolute;
+    top: 30px;
+    left: 300px;
+
+}
+
+
+.spanIdInfo {
+    font-size: 16px;
+    font-weight: bold;
 }
