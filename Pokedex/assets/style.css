@@ -120,6 +120,7 @@ body {
     padding: 10px;
     background-color: #F2FEF3;
     border-radius: 50%;
+    box-shadow: 4px 4px 4px 4px #000;
 }
 
 .grass {
@@ -852,6 +853,51 @@ body {
 #fairy-fight {
     background: rgb(238,126,243);
     background: linear-gradient(90deg, rgba(238,126,243,1) 38%, rgba(255,193,0,1) 75%);
+}
+
+#dragon-psychic {
+    background: rgb(0,55,173);
+    background: linear-gradient(90deg, rgba(0,55,173,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#water-grass {
+    background: rgb(0,158,227);
+    background: linear-gradient(90deg, rgba(0,158,227,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#bug-ground {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(203,163,27,1) 75%);
+}
+
+#bug-phantom {
+    background: rgb(117,181,119);
+    background: linear-gradient(90deg, rgba(117,181,119,1) 38%, rgba(76,0,100,1) 75%);
+}
+
+#fire-ground {
+    background: rgb(234,82,0);
+    background: linear-gradient(90deg, rgba(234,82,0,1) 38%, rgba(203,163,27,1) 75%);
+}
+
+#ground-dragon {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(0,55,173,1) 75%);
+}
+
+#rock-psychic {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(218,0,122,1) 75%);
+}
+
+#rock-grass {
+    background: rgb(128,97,0);
+    background: linear-gradient(90deg, rgba(128,97,0,1) 38%, rgba(57,240,65,1) 75%);
+}
+
+#ground-psychic {
+    background: rgb(203,163,27);
+    background: linear-gradient(90deg, rgba(203,163,27,1) 38%, rgba(218,0,122,1) 75%);
 }
 
 #electric-sinister {

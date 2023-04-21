@@ -290,26 +290,26 @@ pintarPoke()
 
 // Control audio
 
-// const audio = document.querySelector('audio');
-// const nonAudio = document.querySelector('#no-audio');
-// const iconAudio = document.querySelector('.audio')
-// audio.volume = 0.1;
-// audio.play();
+const audio = document.querySelector('audio');
+const nonAudio = document.querySelector('#no-audio');
+const iconAudio = document.querySelector('.audio')
+audio.volume = 0.1;
+audio.play();
 
-// const controlAudio = document.querySelector('#on-audio');
+const controlAudio = document.querySelector('#on-audio');
 
-// controlAudio.addEventListener('click', () => {
-//     audio.pause();
-//     iconAudio.style.display = 'none'
-//     nonAudio.style.display = 'block'
+controlAudio.addEventListener('click', () => {
+    audio.pause();
+    iconAudio.style.display = 'none'
+    nonAudio.style.display = 'block'
 
-// })
+})
 
-// nonAudio.addEventListener('click', () => {
-//     audio.play();
-//     iconAudio.style.display = 'block';
-//     nonAudio.style.display = 'none';
-// })
+nonAudio.addEventListener('click', () => {
+    audio.play();
+    iconAudio.style.display = 'block';
+    nonAudio.style.display = 'none';
+})
 
 // Creando los banners de información
 

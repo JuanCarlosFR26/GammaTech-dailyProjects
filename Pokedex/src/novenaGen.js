@@ -707,6 +707,10 @@ function pintarPoke() {
             card.setAttribute('id', 'fairy-fight');
         }
 
+        if(card.classList.contains('dragon') && card.classList.contains('psychic')) {
+          card.setAttribute('id', 'dragon-psychic');
+        }
+
     })
 
   container.appendChild(card);

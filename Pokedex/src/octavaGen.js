@@ -641,12 +641,20 @@ function pintarPoke() {
             card.setAttribute('id', 'bug-psychic');
         }
 
+        if(card.classList.contains('bug') && card.classList.contains('sinister')) {
+            card.setAttribute('id', 'bug-sinister');
+        }
+
         if(card.classList.contains('grass') && card.classList.contains('dragon')) {
             card.setAttribute('id', 'grass-dragon');
         }
 
         if(card.classList.contains('electric') && card.classList.contains('poison')) {
             card.setAttribute('id', 'electric-poison');
+        }
+
+        if(card.classList.contains('electric') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'electric-fight');
         }
 
         if(card.classList.contains('sinister') && card.classList.contains('fairy')) {
@@ -671,6 +679,34 @@ function pintarPoke() {
 
         if(card.classList.contains('electric') && card.classList.contains('ice')) {
             card.setAttribute('id', 'electric-ice');
+        }
+
+        if(card.classList.contains('poison') && card.classList.contains('normal')) {
+            card.setAttribute('id', 'poison-normal');
+        }
+
+        if(card.classList.contains('grass') && card.classList.contains('fire')) {
+            card.setAttribute('id', 'grass-fire');
+        }
+
+        if(card.classList.contains('steel') && card.classList.contains('poison')) {
+            card.setAttribute('id', 'steel-poison');
+        }
+
+        if(card.classList.contains('ground') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'ground-fight');
+        }
+
+        if(card.classList.contains('rock') && card.classList.contains('electric')) {
+            card.setAttribute('id', 'rock-electric');
+        }
+
+        if(card.classList.contains('fairy') && card.classList.contains('fight')) {
+            card.setAttribute('id', 'fairy-fight');
+        }
+
+        if(card.classList.contains('dragon') && card.classList.contains('psychic')) {
+          card.setAttribute('id', 'dragon-psychic');
         }
 
     })
