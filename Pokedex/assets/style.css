@@ -903,6 +903,14 @@ body {
     border: 8px solid #000;
 }
 
+.bannerInfo::before {
+    content: '---------------------------';
+    left: 2%;
+    font-size: 70px;
+    position: absolute;
+    top: 250px;
+}
+
 #divIcon {
     position: absolute;
     top: 30px;
@@ -916,6 +924,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #000;
 }
 
 #imgContainer {
@@ -933,6 +942,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    box-shadow: 3px 3px 3px 3px #000;
 }
 
 #imgContainer img {
@@ -944,14 +954,15 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 200px;
+    width: 240px;
     padding: 12px;
     height: 120px;
     background-color: #fff;
-    border: 4px dotted #000;
+    border: 4px outset #000;
     position: absolute;
-    top: 30px;
+    top: 60px;
     left: 300px;
+    box-shadow: 3px 3px 3px 3px #000;
 
 }
 

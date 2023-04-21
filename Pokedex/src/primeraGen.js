@@ -28,6 +28,8 @@ const getPokemons = async () => {
       const poke = await fetchPokemon();
       const pokeList = poke;
 
+      // console.log(pokeList);
+
       const imgPoke = document.createElement("img");
       imgPoke.src = pokeList.sprites.front_default;
       const imgPokeShiny = document.createElement('img');
@@ -54,8 +56,8 @@ const getPokemons = async () => {
       pokeArr.push(pokeObj);
 
       pokeArr.sort((a, b) => a.id - b.id)
-
       localStorage.setItem("pokemon", JSON.stringify(pokeArr));
+
     };
 
     everyPokemon();
@@ -288,32 +290,31 @@ pintarPoke()
 
 // Control audio
 
-const audio = document.querySelector('audio');
-const nonAudio = document.querySelector('#no-audio');
-const iconAudio = document.querySelector('.audio')
-audio.volume = 0.1;
-audio.play();
+// const audio = document.querySelector('audio');
+// const nonAudio = document.querySelector('#no-audio');
+// const iconAudio = document.querySelector('.audio')
+// audio.volume = 0.1;
+// audio.play();
 
-const controlAudio = document.querySelector('#on-audio');
+// const controlAudio = document.querySelector('#on-audio');
 
-controlAudio.addEventListener('click', () => {
-    audio.pause();
-    iconAudio.style.display = 'none'
-    nonAudio.style.display = 'block'
+// controlAudio.addEventListener('click', () => {
+//     audio.pause();
+//     iconAudio.style.display = 'none'
+//     nonAudio.style.display = 'block'
 
-})
+// })
 
-nonAudio.addEventListener('click', () => {
-    audio.play();
-    iconAudio.style.display = 'block';
-    nonAudio.style.display = 'none';
-})
+// nonAudio.addEventListener('click', () => {
+//     audio.play();
+//     iconAudio.style.display = 'block';
+//     nonAudio.style.display = 'none';
+// })
 
 // Creando los banners de información
 
 const idInfo = document.querySelectorAll('span')
 
-console.log(idInfo);
 
 idInfo.forEach(span => {
   span.addEventListener('click', () => {
@@ -401,13 +402,16 @@ function showInfo(element) {
     infoContainer.append(id, namePoke, typePoke, typePoke2)
   }
 
-  // console.log(type1, type2);
-
   id.innerText = 'ID: ' + spanInfoId;
   namePoke.innerText = 'Nombre: ' + h4InfoName;
 
 
-  bannerInfo.appendChild(infoContainer)
+  bannerInfo.appendChild(infoContainer);
+
+  // Añadiendo la evolución
+  const pokeList = JSON.parse(localStorage.getItem('pokemon'));
+
+  console.log(pokeList);
 
 
 }
