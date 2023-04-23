@@ -143,6 +143,9 @@ dark.addEventListener('click', (e) => {
     if(html.classList.contains('dark')) {
         html.classList.remove('dark')
         e.target.innerText = 'Dark Mode'
+        hourBar.style.backgroundColor = '#000';
+        minuteBar.style.backgroundColor = '#000';
+        dayCircle.style.backgroundColor = '#000';
     } else {
         html.classList.add('dark');
         e.target.innerText = 'Light Mode';
