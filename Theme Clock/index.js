@@ -127,7 +127,6 @@ const moveClock = () => {
     secondBar.style.transform = `translate(-50%, -100%) rotate(${scale(second, 0, 59, 0, 360)}deg)`;
 
 
-
 }
 
 moveClock();
